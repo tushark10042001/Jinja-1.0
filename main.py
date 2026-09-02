@@ -13,7 +13,7 @@ def predict(
 ):
   prediction = number_1 * 10
 
-  return """
+  return HTMLResponse(content = f"""
   <!DOCTYPE html>
   
   <html>
@@ -28,5 +28,5 @@ def predict(
   
   </body>
   </html>
-  """
+  """)
   
